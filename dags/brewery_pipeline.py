@@ -9,9 +9,11 @@ import json
 import os
 
 default_args = {
-    "owner": "Bees",
-    "retries": 2,
-    "retry_delay": timedelta(minutes=5),
+    'owner': 'airflow',
+    'retries': 2,
+    'retry_delay': timedelta(minutes=5)
+    #'email_on_failure': True, -- se desejar que seja enviado um alerta quando ocorrer falha
+    #'email': ['colocar seu email aqui'],
 }
 
 # Extrair os dados
@@ -43,7 +45,7 @@ with DAG(
     dag_id="brewery_data_pipeline",
     default_args=default_args,
     description="Pipeline ETL para dados de cervejarias usando Airflow",
-    schedule_interval="@daily",  # Executa 1x por dia
+    schedule_interval="00 22 * * *",  # Executa 1x por dia
     start_date=datetime(2025, 4, 1),
     catchup=False,
     tags=["brewery", "etl", "data_pipeline"]

@@ -26,6 +26,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
       - ./data:/opt/airflow/data
+      - ./tests:/opt/airflow/tests
     ports:
       - "8080:8080"
     command: >
@@ -46,6 +47,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
       - ./data:/opt/airflow/data
+      - ./tests:/opt/airflow/tests
     command: bash -c "airflow scheduler"
 
 volumes:

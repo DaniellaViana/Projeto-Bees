@@ -7,6 +7,7 @@ def test_transformed_parquet_structure():
 
     df = pd.read_parquet(file_path)
 
+    # Campos que esperamos encontrar em cada registro
     expected_columns = {
         "id", "name", "brewery_type", "address_1", "address_2", "address_3",
         "city", "state_province", "postal_code", "country", "longitude",
