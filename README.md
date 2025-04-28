@@ -6,7 +6,7 @@ Daniella Viana
 [github.com/DaniellaViana](https://github.com/DaniellaViana) 
 
 ## 📌 Objetivo
-Este projeto é uma solução para o desafio técnico da AB InBev. Ele implementa um pipeline de dados ETL (Extract, Transform, Load), utilizando o **Apache Airflow** para orquestração, e **Pandas** para processamento de dados. A arquitetura segue o modelo **Lakehouse**, com as camadas Bronze, Silver e Gold, permitindo fácil rastreabilidade e modularidade.
+Este projeto implementa um pipeline de dados ETL (Extract, Transform, Load), utilizando o **Apache Airflow** para orquestração, e **Pandas** para processamento de dados. A arquitetura segue o modelo **Lakehouse**, com as camadas Bronze, Silver e Gold, permitindo fácil rastreabilidade e modularidade.
 
 ## 📁 Estrutura do Projeto
 
